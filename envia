@@ -1,0 +1,4 @@
+#!/bin/sh
+reporte="/var/www/html/semilla_automatizado/avance_semilla_x_$(date +"%Y-%m-%d").xlsx"
+echo 'Avance de la semilla hasta hoy '.$(date +"%Y-%m-%d").' |mail -s "Resumen avance semilla al $(date +"%d-%m-%Y")." -a $reporte -S from=jmacias@opengets.cl -c joaquin.macias.c@gmail.com, joaquin.macias.c@hotmail.com
+
